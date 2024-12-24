@@ -5,6 +5,13 @@
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
+keymap.set('n', '+', "<C-a>")
+keymap.set('n', '-', "<C-x>")
+
+
+keymap.set('n', '<C-z>', '', { noremap = true, silent = true })
+
+
 -- Shift-Enter --
 keymap.set('i', '<S-Enter>', '<Esc>o', opts)
 keymap.set('n', '<S-Enter>', 'o', opts)
@@ -12,6 +19,19 @@ keymap.set('n', '<S-Enter>', 'o', opts)
 -- Select all
 keymap.set("n", "<C-a>", "gg<S-v>G")
 -- keymap.set("i", "<C-a>", "<Esc>gg<S-v>G")
+
+-- Text Editing
+keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+keymap.set("v", "<", "<gv")
+keymap.set("v", ">", ">gv")
+
+-- Lsp
+keymap.set("n", "<leader>gd", ":lua vim.lsp.buf.definition()<CR>")
+keymap.set("n", "<leader>gi", ":lua vim.lsp.buf.implementation()<CR>")
+keymap.set("n", "K", ":lua vim.lsp.buf.hover()<CR>")
+keymap.set("n", "<leader>rn", ":lua vim.lsp.buf.rename()<CR>")
+keymap.set("n", "<leader>gr", ":lua vim.lsp.buf.references()<CR>")
 
 -- Duplication
 keymap.set("v", "<C-d>", "<Esc>yyPi")
@@ -52,8 +72,8 @@ keymap.set('n', '<C-w><up>', '<C-w>+')
 keymap.set('n', '<C-w><down>', '<C-w>-')
 
 -- Undo
-keymap.set('n', '<C-z>', 'u')
-keymap.set('i', '<C-z>', '<Esc>ui')
+-- keymap.set('n', '<C-z>', 'u')
+-- keymap.set('i', '<C-z>', '<Esc>ui')
 
 -- Run python
 keymap.set('n', '<leader>r', ':!python3 %<Return>', opts)
@@ -62,6 +82,6 @@ keymap.set('n', '<leader>r', ':!python3 %<Return>', opts)
 -- keymap.set('i', '<C-S-Z', 'C-r')
 
 -- Diagnostics
-keymap.set('n', 'C-j', function()
-  vim.diagnostic.goto_next()
+keymap.set('n', '<C-j>', function()
+    vim.diagnostic.goto_next()
 end, opts)
