@@ -14,7 +14,9 @@ keymap.set('n', '<C-z>', '', { noremap = true, silent = true })
 
 -- Shift-Enter --
 keymap.set('i', '<S-Enter>', '<Esc>o', opts)
+keymap.set('i', '<C-Enter>', '<Esc>O', opts)
 keymap.set('n', '<S-Enter>', 'o', opts)
+keymap.set('n', '<C-Enter>', 'O', opts)
 
 -- Select all
 keymap.set("n", "<C-a>", "gg<S-v>G")
