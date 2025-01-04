@@ -8,6 +8,9 @@ local opts = { noremap = true, silent = true }
 keymap.set('n', '+', "<C-a>")
 keymap.set('n', '-', "<C-x>")
 
+-- Copy/Paste
+keymap.set('v', 'y', '"+y')
+
 
 keymap.set('n', '<C-z>', '', { noremap = true, silent = true })
 
