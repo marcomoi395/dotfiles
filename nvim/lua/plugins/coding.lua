@@ -5,16 +5,6 @@ return {
         cmd = "Copilot",
         build = ":Copilot auth",
         event = "InsertEnter",
-        config = function()
-            vim.g.copilot = {
-                enabled = true,
-                keymap = {
-                    accept = "<Tab>",
-                    next = "<M-]>",
-                    prev = "<M-[>",
-                },
-            }
-        end,
         opts = {
             suggestion = {
                 enabled = not vim.g.ai_cmp,

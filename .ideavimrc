@@ -1,0 +1,66 @@
+set clipboard+=unnamed,unnamedplus
+set relativenumber
+set scrolloff=5
+
+imap <C-c> <Esc>
+
+map <Space><Space> :action SearchEverywhere<CR>
+
+" Chia cửa sổ ngang (horizontal split)
+nmap ss :split<CR>
+
+" Chia cửa sổ dọc (vertical split)
+nmap sv :vsplit<CR>
+
+" Di chuyển sang cửa sổ bên trái
+nmap sh <C-w>h
+
+" Di chuyển lên cửa sổ phía trên
+nmap sk <C-w>k
+
+" Di chuyển xuống cửa sổ phía dưới
+nmap sj <C-w>j
+
+" Di chuyển sang cửa sổ bên phải
+nmap sl <C-w>l
+
+" Shift + Enter: Thoát chế độ insert và thêm dòng mới bên dưới
+imap <S-Enter> <Esc>o
+
+" Ctrl + Enter: Thoát chế độ insert và thêm dòng mới bên trên
+imap <C-Enter> <Esc>O
+
+" Shift + Enter: Thêm dòng mới bên dưới
+nmap <S-Enter> o
+
+" Ctrl + Enter: Thêm dòng mới bên trên
+nmap <C-Enter> O
+
+
+" Di chuyển dòng xuống bằng phím J
+vmap J :m '>+1<CR>gv=gv
+
+" Di chuyển dòng lên bằng phím K
+vmap K :m '<-2<CR>gv=gv
+
+
+" Giữ vùng chọn sau khi thụt lề sang trái
+vmap < <gv
+
+" Giữ vùng chọn sau khi thụt lề sang phải
+vmap > >gv
+
+" Ghép dòng hiện tại với dòng bên dưới, giữ lại vị trí con trỏ
+nmap J mzJ`z
+
+" Cuộn xuống nửa màn hình và giữ con trỏ ở giữa
+nmap <C-d> <C-d>zz
+
+" Cuộn lên nửa màn hình và giữ con trỏ ở giữa
+nmap <C-u> <C-u>zz
+
+" Tìm kiếm tiếp theo và giữ con trỏ ở giữa màn hình
+nmap n nzzzv
+
+" Tìm kiếm trước đó và giữ con trỏ ở giữa màn hình
+nmap N Nzzzv
