@@ -6,7 +6,9 @@ vim.o.swapfile = false
 
 vim.o.termguicolors = true
 
-vim.cmd("colorscheme rose-pine-main")
+-- vim.cmd("colorscheme rose-pine-main")
+vim.g.sonokai_transparent_background = 1
+vim.cmd [[colorscheme sonokai]]
 
 
 vim.api.nvim_exec([[
