@@ -95,6 +95,6 @@ vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' 
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 
 -- Diagnostics
-keymap.set('n', '<C-j>', function()
+keymap.set('n', '<C-m>', function()
     vim.diagnostic.goto_next()
 end, opts)
