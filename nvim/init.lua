@@ -8,20 +8,23 @@ vim.o.termguicolors = true
 
 -- vim.cmd("colorscheme rose-pine-main")
 vim.g.sonokai_transparent_background = 1
-vim.cmd [[colorscheme sonokai]]
+
+-- vim.cmd("colorscheme onelight")
+vim.cmd("colorscheme onedark")
+-- vim.cmd [[colorscheme sonokai]]
 
 
-vim.api.nvim_exec([[
-  augroup TransparentBackground
-    autocmd!
-    autocmd GUIEnter * hi Normal guibg=NONE ctermbg=NONE
-    autocmd GUIEnter * hi NonText guibg=NONE ctermbg=NONE
-    autocmd GUIEnter * hi SignColumn guibg=NONE ctermbg=NONE
-    autocmd GUIEnter * hi StatusLine guibg=NONE ctermbg=NONE
-    autocmd GUIEnter * hi VertSplit guibg=NONE ctermbg=NONE
-    autocmd GUIEnter * hi TabLine guibg=NONE ctermbg=NONE
-  augroup END
-]], false)
+-- vim.api.nvim_exec([[
+--   augroup TransparentBackground
+--     autocmd!
+--     autocmd GUIEnter * hi Normal guibg=NONE ctermbg=NONE
+--     autocmd GUIEnter * hi NonText guibg=NONE ctermbg=NONE
+--     autocmd GUIEnter * hi SignColumn guibg=NONE ctermbg=NONE
+--     autocmd GUIEnter * hi StatusLine guibg=NONE ctermbg=NONE
+--     autocmd GUIEnter * hi VertSplit guibg=NONE ctermbg=NONE
+--     autocmd GUIEnter * hi TabLine guibg=NONE ctermbg=NONE
+--   augroup END
+-- ]], false)
 
 vim.o.tabstop = 4      -- A TAB character looks like 4 spaces
 vim.o.expandtab = true -- Pressing the TAB key will insert spaces instead of a TAB character

@@ -5,6 +5,9 @@
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
+
+keymap.set("i", "<C-c>", "<Esc>", { noremap = true, silent = true })
+
 keymap.set('n', '+', "<C-a>")
 keymap.set('n', '-', "<C-x>")
 
@@ -81,7 +84,7 @@ keymap.set('n', '<C-w><down>', '<C-w>-')
 -- keymap.set('i', '<C-z>', '<Esc>ui')
 
 -- Run python
-keymap.set('n', '<leader>r', ':!python3 %<Return>', opts)
+keymap.set('n', '<leader>R', ':!python3 %<Return>', opts)
 -- -- Redo
 -- keymap.set('n', '<C-S-Z', 'C-r')
 -- keymap.set('i', '<C-S-Z', 'C-r')
