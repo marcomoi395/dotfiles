@@ -1,0 +1,64 @@
+[colors]
+draw_bold_text_with_bright_colors = false 
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 12
+
+[font.normal]
+family = "Jetbrains Mono"
+style = "Normal"
+[font.italic]
+family = "Jetbrains Mono "	
+style = "Italic"
+[font.bold]
+family = "Jetbrains Mono"
+style = "Bold"
+[font.bold_italic]
+family = "Jetbrains Mono"
+style = "Bold italic"
+
+
+[selection]
+save_to_clipboard = true
+
+[window]
+dynamic_padding = true
+dynamic_title = true
+opacity = 0.8
+
+[window.dimensions]
+columns = 100
+lines = 50
+
+[window.padding]
+x = 20
+y = 20
+
+[cursor]
+blink_interval = 20
+smooth_motion_factor = 0.4
+unfocused_hollow = true
+vi_mode_style = "Block"
+
+
+[cursor.style]
+blinking = "on"
+shape = "Block"
+
+[general]
+live_config_reload =false
+import = ["~/.config/alacritty/color.toml"]
+# [features]
+# default = ["wayland"]
+   
+[[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\u001b[13;2u"
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Control"
+chars = "\u001b[13;5u"

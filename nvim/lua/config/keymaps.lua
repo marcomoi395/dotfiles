@@ -23,6 +23,8 @@ keymap.set('i', '<S-Enter>', '<Esc>o', opts)
 keymap.set('i', '<C-Enter>', '<Esc>O', opts)
 keymap.set('n', '<S-Enter>', 'o', opts)
 keymap.set('n', '<C-Enter>', 'O', opts)
+-- vim.keymap.set('n', '<Esc>[13;2u', 'o', { noremap = true, silent = true })
+-- vim.keymap.set('n', '<Esc>[13;5u', 'O', { noremap = true, silent = true })
 
 -- Select all
 keymap.set("n", "<C-a>", "gg<S-v>G")
@@ -42,7 +44,7 @@ keymap.set("n", "<leader>rn", ":lua vim.lsp.buf.rename()<CR>")
 keymap.set("n", "<leader>gr", ":lua vim.lsp.buf.references()<CR>")
 
 -- Duplication
-keymap.set("v", "<C-d>", "<Esc>yyPi")
+-- keymap.set("v", "<C-d>", "<Esc>yyPi")
 
 -- Quit
 -- keymap.set("i", "<c-q>", "<esc><c-z>")
@@ -97,7 +99,6 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live gr
 vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 
--- Diagnostics
-keymap.set('n', '<C-m>', function()
+keymap.set('n', '<C-b>', function()
     vim.diagnostic.goto_next()
 end, opts)

@@ -10,8 +10,8 @@ vim.o.termguicolors = true
 vim.g.sonokai_transparent_background = 1
 
 -- vim.cmd("colorscheme onelight")
-vim.cmd("colorscheme onedark")
--- vim.cmd [[colorscheme sonokai]]
+-- vim.cmd("colorscheme onedark")
+vim.cmd [[colorscheme sonokai]]
 
 
 -- vim.api.nvim_exec([[
