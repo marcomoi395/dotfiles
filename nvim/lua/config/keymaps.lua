@@ -8,6 +8,11 @@ local opts = { noremap = true, silent = true }
 
 keymap.set("i", "<C-c>", "<Esc>", { noremap = true, silent = true })
 
+
+keymap.set("n", "H", "^")
+keymap.set("n", "L", "$")
+
+
 keymap.set('n', '+', "<C-a>")
 keymap.set('n', '-', "<C-x>")
 
