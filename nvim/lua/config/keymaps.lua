@@ -96,6 +96,16 @@ keymap.set('n', '<leader>R', ':!python3 %<Return>', opts)
 -- keymap.set('n', '<C-S-Z', 'C-r')
 -- keymap.set('i', '<C-S-Z', 'C-r')
 
+-- Copilot
+vim.keymap.set('n', '<leader>zc', ':CopilotChat<Return>', { desc = 'Chat with Copilot' })
+vim.keymap.set('v', '<leader>ze', ':CopilotChatExplain<Return>', { desc = 'Expain code' })
+vim.keymap.set('v', '<leader>zr', ':CopilotChatReview<Return>', { desc = 'Review code' })
+vim.keymap.set('v', '<leader>zf', ':CopilotChatFix<Return>', { desc = 'Fix code issue' })
+vim.keymap.set('v', '<leader>zo', ':CopilotChatOptimize<Return>', { desc = 'Optimize code' })
+vim.keymap.set('v', '<leader>zd', ':CopilotChatDocs<Return>', { desc = 'Generate docs' })
+vim.keymap.set('v', '<leader>zt', ':CopilotChatTests<Return>', { desc = 'Optimize code' })
+vim.keymap.set('v', '<leader>zm', ':CopilotChatCommit<Return>', { desc = 'Generate commit for selection' })
+vim.keymap.set('n', '<leader>zs', ':CopilotChatCommit<Return>', { desc = 'Generate commit message' })
 
 
 local builtin = require('telescope.builtin')
