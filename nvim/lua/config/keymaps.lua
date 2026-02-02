@@ -9,6 +9,8 @@ keymap.set("i", "<C-c>", "<Esc>", { noremap = true, silent = true })
 
 keymap.set("n", "H", "^")
 keymap.set("n", "L", "$")
+keymap.set("v", "H", "^")
+keymap.set("v", "L", "$")
 
 keymap.set("n", "<A-h>", ":bprevious<CR>", { noremap = true, silent = true })
 keymap.set("n", "<A-l>", ":bnext<CR>", { noremap = true, silent = true })
