@@ -46,11 +46,11 @@ keymap.set("v", "<", "<gv")
 keymap.set("v", ">", ">gv")
 
 -- Lsp
-keymap.set("n", "<leader>gd", ":lua vim.lsp.buf.definition()<CR>")
-keymap.set("n", "<leader>gi", ":lua vim.lsp.buf.implementation()<CR>")
+-- keymap.set("n", "<leader>gd", ":lua vim.lsp.buf.definition()<CR>")
+-- keymap.set("n", "<leader>gi", ":lua vim.lsp.buf.implementation()<CR>")
 keymap.set("n", "K", ":lua vim.lsp.buf.hover()<CR>")
 keymap.set("n", "<leader>rn", ":lua vim.lsp.buf.rename()<CR>")
-keymap.set("n", "<leader>gr", ":lua vim.lsp.buf.references()<CR>")
+-- keymap.set("n", "<leader>gr", ":lua vim.lsp.buf.references()<CR>")
 
 -- remove but don't copy to clipboard
 keymap.set("v", "x", '"_x', opts)
@@ -94,6 +94,10 @@ keymap.set("n", "<C-w><left>", "<C-w><")
 keymap.set("n", "<C-w><right>", "<C-w>>")
 keymap.set("n", "<C-w><up>", "<C-w>+")
 keymap.set("n", "<C-w><down>", "<C-w>-")
+
+-- Diffview
+keymap.set("n", "ggd", "<cmd>DiffviewOpen<cr>", { desc = "Mở Diffview", remap = true })
+keymap.set("n", "ggq", "<cmd>DiffviewClose<cr>", { desc = "Đóng Diffview" })
 
 -- Undo
 -- keymap.set('n', '<C-z>', 'u')
