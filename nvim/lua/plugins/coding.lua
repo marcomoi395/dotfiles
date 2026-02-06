@@ -99,6 +99,9 @@ return {
                 -- mode = "tab",
                 filetype = {
                     cpp = "cd $dir && g++ $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt && rm $fileNameWithoutExt",
+                    python = "python3 -u",
+                    go = "go run",
+                    typescript = "deno run",
                 },
                 term = {
                     position = "vsplit",

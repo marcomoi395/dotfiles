@@ -106,6 +106,7 @@ keymap.set("n", "ggq", "<cmd>DiffviewClose<cr>", { desc = "Đóng Diffview" })
 -- Run python
 -- keymap.set("n", "<leader>R", ":!python3 %<Return>", opts)
 keymap.set("n", "<leader>rr", ":RunCode<CR>", { noremap = true, silent = true })
+
 -- -- Redo
 -- keymap.set('n', '<C-S-Z', 'C-r')
 -- keymap.set('i', '<C-S-Z', 'C-r')
