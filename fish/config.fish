@@ -31,6 +31,7 @@ if status is-interactive # Commands to run in interactive sessions can go here
     alias dc 'docker compose'
     alias gst 'git status'
     alias desktop 'cd /run/media/ym/8016C89B16C89416/Users/youngmarco/Desktop/'
-    # alias gh copilot
+    alias pt="QT_QPA_PLATFORM=xcb /usr/lib/packettracer/packettracer.AppImage --no-sandbox"
+    alias gh copilot
     alias lg lazygit
 end
