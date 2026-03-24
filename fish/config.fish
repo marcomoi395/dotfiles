@@ -24,14 +24,15 @@ if status is-interactive # Commands to run in interactive sessions can go here
     alias q 'qs -c ii'
     alias n touch
     alias code 'cd /run/media/ym/DATA/Code/'
+    alias ws 'cd /run/media/ym/DATA/workspaces/'
     alias v 'nvim .'
     alias c clear
     alias ns 'npm start'
-    alias nd 'npm run dev'
+    alias nd 'npm run start:dev'
     alias dc 'docker compose'
     alias gst 'git status'
     alias desktop 'cd /run/media/ym/8016C89B16C89416/Users/youngmarco/Desktop/'
     alias pt="QT_QPA_PLATFORM=xcb /usr/lib/packettracer/packettracer.AppImage --no-sandbox"
-    alias gh copilot
+    # alias gh copilot
     alias lg lazygit
 end

@@ -10,6 +10,10 @@ vim.o.shiftwidth = 4 -- Number of spaces inserted when indenting
 -- Disable persistent undo
 vim.opt.undofile = false
 
+vim.opt.wrap = true
+vim.opt.linebreak = true
+vim.opt.breakindent = true
+
 -- Undercurl
 vim.cmd([[let &t_Cs = "\e[4:3m"]])
 vim.cmd([[let &t_Ce = "\e[4:0m"]])

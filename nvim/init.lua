@@ -4,6 +4,8 @@ require("config.lazy")
 -- No save swap file
 vim.o.swapfile = false
 
+vim.o.autoread = true
+
 vim.o.termguicolors = true
 
 vim.g.sonokai_transparent_background = 1
