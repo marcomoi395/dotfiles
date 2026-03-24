@@ -15,7 +15,9 @@ vim.cmd([[colorscheme sonokai]])
 -- vim.cmd("colorscheme onedark")
 -- vim.cmd([[colorscheme cyberdream ]])
 
--- vim.cmd("colorscheme rose-pine-moon")
+-- vim.cmd("colorscheme rose-pine")
+vim.cmd("colorscheme rose-pine-moon")
+-- vim.cmd("colorscheme rose-pine-dawn")
 
 -- vim.cmd("colorscheme nord")
 
