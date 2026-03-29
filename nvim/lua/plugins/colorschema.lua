@@ -44,4 +44,20 @@ return {
         lazy = false,
         priority = 1000,
     },
+
+    { "projekt0n/github-nvim-theme", name = "github-theme" },
+    { "marko-cerovac/material.nvim", name = "material-theme" },
+    {
+        "loctvl842/monokai-pro.nvim",
+        lazy = false,
+        priority = 1000,
+        config = function()
+            require("monokai-pro").setup({
+                transparent_background = true,
+                terminal_colors = true,
+                filter = "ristretto", -- classic | octagon | pro | ristretto
+            })
+            -- vim.cmd.colorscheme("monokai-pro")
+        end,
+    },
 }

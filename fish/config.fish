@@ -22,13 +22,17 @@ if status is-interactive # Commands to run in interactive sessions can go here
     alias ls 'eza --icons'
     alias clear "printf '\033[2J\033[3J\033[1;1H'"
     alias q 'qs -c ii'
+    alias oc opencode
     alias n touch
     alias code 'cd /run/media/ym/DATA/Code/'
     alias ws 'cd /run/media/ym/DATA/workspaces/'
+    alias conf 'cd ~/.config'
     alias v 'nvim .'
     alias c clear
     alias ns 'npm start'
     alias nd 'npm run start:dev'
+    alias yd 'yarn run dev'
+    alias n18 'nvm use 18'
     alias dc 'docker compose'
     alias gst 'git status'
     alias desktop 'cd /run/media/ym/8016C89B16C89416/Users/youngmarco/Desktop/'
