@@ -64,8 +64,8 @@
     },
     "audio": {
         "protection": {
-            "enable": false,
-            "maxAllowed": 99,
+            "enable": true,
+            "maxAllowed": 60,
             "maxAllowedIncrease": 10
         }
     },
@@ -80,7 +80,7 @@
             "workspaceZoom": 1
         },
         "thumbnailPath": "",
-        "wallpaperPath": "/home/ym/Wallpapers/Wallpapers/inkgirl.png",
+        "wallpaperPath": "/home/ym/Wallpapers/Wallpapers/wallhaven-9omr8k.png",
         "widgets": {
             "clock": {
                 "cookie": {
@@ -146,7 +146,7 @@
         "floatStyleShadow": true,
         "indicators": {
             "notifications": {
-                "showUnreadCount": false
+                "showUnreadCount": true
             }
         },
         "resources": {
@@ -208,7 +208,7 @@
             "key": 12
         },
         "splitButtons": false,
-        "superKey": "",
+        "superKey": "󰣇",
         "useFnSymbol": false,
         "useMacSymbol": false,
         "useMouseSymbol": false
@@ -533,8 +533,8 @@
     },
     "workSafety": {
         "enable": {
-            "clipboard": false,
-            "wallpaper": false
+            "clipboard": true,
+            "wallpaper": true
         },
         "triggerCondition": {
             "fileKeywords": [
