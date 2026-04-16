@@ -2,6 +2,7 @@
 return {
     {
         "zbirenbaum/copilot.lua",
+        enabled = false, -- Requires Node.js 22+ (you have 18.20.8)
         cmd = "Copilot",
         build = ":Copilot auth",
         event = "InsertEnter",

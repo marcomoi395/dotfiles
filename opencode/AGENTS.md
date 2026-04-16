@@ -1,5 +1,3 @@
-# CLAUDE.md
-
 Behavioral guidelines to reduce common LLM coding mistakes. Merge with project-specific instructions as needed.
 
 **Tradeoff:** These guidelines bias toward caution over speed. For trivial tasks, use judgment.
@@ -289,3 +287,11 @@ describe('UserService.create', () => {
 6. Use RO-RO pattern for multiple parameters
 7. Add JSDoc comments explaining functionality
 8. Use higher-order functions (map, filter, reduce) instead of loops
+
+<claude-mem-context>
+# Memory Context from Past Sessions
+
+*No context yet. Complete your first session and context will appear here.*
+
+Use claude-mem search tools for manual memory queries.
+</claude-mem-context>
