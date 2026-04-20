@@ -5,6 +5,8 @@ description: Generates detailed implementation plans from feature specifications
 
 # Feature Plan Generation
 
+- Mọi dữ liệu khi ghi vào Markdown phải là tiếng Việt có dấu.
+
 ## Overview
 
 This skill turns feature specs and project patterns into an actionable backend implementation plan before coding starts. It reduces rework by converting requirements into phased tasks, explicit dependencies, risks, and verification gates.

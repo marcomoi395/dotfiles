@@ -64,7 +64,7 @@
     },
     "audio": {
         "protection": {
-            "enable": true,
+            "enable": false,
             "maxAllowed": 60,
             "maxAllowedIncrease": 10
         }
@@ -80,7 +80,7 @@
             "workspaceZoom": 1
         },
         "thumbnailPath": "",
-        "wallpaperPath": "/home/ym/Wallpapers/Wallpapers/bg-1.jpg",
+        "wallpaperPath": "/home/ym/Wallpapers/Wallpapers/inkgirl.png",
         "widgets": {
             "clock": {
                 "cookie": {

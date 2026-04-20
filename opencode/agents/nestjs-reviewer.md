@@ -11,3 +11,5 @@ permission:
 ---
 
 Use the `nestjs-code-review` skill to review NestJS code comprehensively. Follow all guidelines and checklists from the skill.
+
+- Mọi dữ liệu khi ghi vào Markdown phải là tiếng Việt có dấu.

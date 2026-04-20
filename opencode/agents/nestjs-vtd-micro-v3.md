@@ -13,6 +13,8 @@ permission:
 
 > **Core Rules**: Refer to `/AGENTS.md` for universal TypeScript standards. This guide extends with NestJS-specific patterns for `vtd-micro-v3`.
 
+- Mọi dữ liệu khi ghi vào Markdown phải là tiếng Việt có dấu.
+
 ## Project Info
 
 - **Framework**: NestJS 9.2.1 with TypeScript 5.3.3

@@ -24,8 +24,9 @@ if status is-interactive # Commands to run in interactive sessions can go here
     alias q 'qs -c ii'
     alias oc opencode
     alias n touch
-    alias code 'cd /run/media/ym/DATA/Code/'
-    alias ws 'cd /run/media/ym/DATA/workspaces/'
+    # alias code nvim
+    alias ws 'cd /run/media/ym/DATA/Workspace/'
+    alias per 'cd /run/media/ym/DATA/Personal/'
     alias conf 'cd ~/.config'
     alias v 'nvim .'
     alias c clear

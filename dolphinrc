@@ -1,14 +1,18 @@
 [DetailsMode]
 PreviewSize=32
 
+[ExtractDialog]
+1920x1080 screen: Window-Maximized=true
+
 [General]
 GlobalViewProps=false
+LockPanels=false
 ShowFullPath=true
 ShowStatusBar=FullWidth
 Version=202
 
 [IconsMode]
-PreviewSize=144
+PreviewSize=96
 
 [KFileDialog Settings]
 Places Icons Auto-resize=false

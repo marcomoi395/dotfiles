@@ -69,6 +69,8 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 
 ## 5. Project-Specific Guidelines
 
+- Mọi dữ liệu khi ghi vào Markdown phải là tiếng Việt có dấu.
+
 ### Universal Code Style & Conventions
 
 #### Imports & Organization

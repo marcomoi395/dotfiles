@@ -5,6 +5,8 @@ description: Reviews NestJS code against VTD Service Loyalty V3 architecture, co
 
 # NestJS Code Review
 
+- Mọi dữ liệu khi ghi vào Markdown phải là tiếng Việt có dấu.
+
 ## Overview
 
 This skill provides a strict, evidence-based workflow to review NestJS features in VTD Service Loyalty V3. It ensures code is correct, secure, performant, maintainable, and aligned with project-specific layers, DTO/decorator conventions, and exception/response patterns.

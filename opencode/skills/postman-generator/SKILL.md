@@ -5,6 +5,8 @@ description: Generates production-ready Postman Collections (v2.1) from NestJS c
 
 # Postman Generator for NestJS APIs
 
+- Mọi dữ liệu khi ghi vào Markdown phải là tiếng Việt có dấu.
+
 ## Overview
 
 This skill analyzes NestJS Controller, DTO, and Service files to automatically generate a complete Postman Collection (v2.1) with multiple test scenarios per endpoint. Instead of generic requests, it creates scenario-specific requests covering success paths, validation failures, and business logic errors, each with realistic mock data derived from DTO constraints.
