@@ -24,9 +24,21 @@ if status is-interactive # Commands to run in interactive sessions can go here
     alias q 'qs -c ii'
     alias oc opencode
     alias n touch
+
     # alias code nvim
     alias ws 'cd /run/media/ym/DATA/Workspace/'
     alias per 'cd /run/media/ym/DATA/Personal/'
+    alias lo 'cd /run/media/ym/DATA/Workspace/vtd-micro-v3/vtd-service-loyalty-v3/'
+    alias user 'cd /run/media/ym/DATA/Workspace/vtd-micro-v3/vtd-service-user-v3/'
+    alias gift 'cd /run/media/ym/DATA/Workspace/vtd-micro-v3/vtd-service-gift-v3/'
+    alias mi 'cd /run/media/ym/DATA/Workspace/vtd-micro-v3/'
+    alias worker 'cd /run/media/ym/DATA/Workspace/vtd-micro-v3/vtd-service-worker-v3'
+    alias import 'cd /run/media/ym/DATA/Workspace/vtd-micro-v3/vtd-service-import-v3'
+
+    # omp
+    alias oh 'omp --hook ~/.omp/agent/hooks/session-start.ts'
+    alias oh-review 'omp --hook ~/.omp/agent/hooks/session-start-review.ts'
+
     alias conf 'cd ~/.config'
     alias v 'nvim .'
     alias c clear
@@ -43,7 +55,13 @@ if status is-interactive # Commands to run in interactive sessions can go here
     alias lg lazygit
 end
 
-set -gx nvm_default_version 18
+# set -gx nvm_default_version 18
+set -gx CHROME_EXECUTABLE /usr/bin/google-chrome-stable
+set -U fish_user_paths $HOME/Android/Sdk/emulator $fish_user_paths
+set -U fish_user_paths $HOME/Android/Sdk/platform-tools $fish_user_paths
+set -U fish_user_paths /home/ym/Android/Sdk/cmdline-tools/latest/bin $fish_user_paths
+set -U ANDROID_HOME /home/ym/Android/Sdk
+set -U ANDROID_SDK_ROOT /home/ym/Android/Sdk
 
 function pm
     if test -z "$argv[1]"

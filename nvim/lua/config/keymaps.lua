@@ -53,10 +53,10 @@ keymap.set("n", "<leader>rn", ":lua vim.lsp.buf.rename()<CR>")
 -- keymap.set("n", "<leader>gr", ":lua vim.lsp.buf.references()<CR>")
 
 -- remove but don't copy to clipboard
-keymap.set("v", "x", '"_x', opts)
-keymap.set("n", "dd", '"_dd', opts)
-keymap.set("v", "c", '"_c', opts)
-keymap.set("n", "cc", '"_cc', opts)
+-- keymap.set("v", "x", '"_x', opts)
+-- keymap.set("n", "dd", '"_dd', opts)
+-- keymap.set("v", "c", '"_c', opts)
+-- keymap.set("n", "cc", '"_cc', opts)
 
 -- Duplication
 -- keymap.set("v", "<C-d>", "<Esc>yyPi")
