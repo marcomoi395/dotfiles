@@ -17,12 +17,14 @@
 /home/ym/.config/hypr/custom/scripts/__restore_video_wallpaper.sh
 /home/ym/.config/hypr/custom/variables.conf
 /home/ym/.config/hypr/hypridle.conf
+/home/ym/.config/hypr/hypridle.conf.new
 /home/ym/.config/hypr/hyprland/colors.conf
 /home/ym/.config/hypr/hyprland.conf
 /home/ym/.config/hypr/hyprland/env.conf
 /home/ym/.config/hypr/hyprland/execs.conf
 /home/ym/.config/hypr/hyprland/general.conf
 /home/ym/.config/hypr/hyprland/keybinds.conf
+/home/ym/.config/hypr/hyprland.lua
 /home/ym/.config/hypr/hyprland/rules.conf
 /home/ym/.config/hypr/hyprland/scripts/ai/license_show-loaded-ollama-models.txt
 /home/ym/.config/hypr/hyprland/scripts/ai/primary-buffer-query.sh
@@ -36,6 +38,7 @@
 /home/ym/.config/hypr/hyprland/shellOverrides/main.conf
 /home/ym/.config/hypr/hyprland/variables.conf
 /home/ym/.config/hypr/hyprlock.conf
+/home/ym/.config/hypr/hyprlock.conf.new
 /home/ym/.config/hypr/monitors.conf
 /home/ym/.config/hypr/workspaces.conf
 /home/ym/.config/illogical-impulse/installed_true
@@ -61,6 +64,7 @@
 /home/ym/.config/matugen/templates/gtk-3.0/gtk.css
 /home/ym/.config/matugen/templates/gtk-4.0/gtk.css
 /home/ym/.config/matugen/templates/hyprland/colors.conf
+/home/ym/.config/matugen/templates/hyprland/colors.lua
 /home/ym/.config/matugen/templates/hyprland/hyprlock-colors.conf
 /home/ym/.config/matugen/templates/kde/color.txt
 /home/ym/.config/matugen/templates/kde/kde-material-you-colors-wrapper.sh
@@ -567,6 +571,7 @@
 /home/ym/.config/quickshell/ii/modules/ii/bar/weather/WeatherCard.qml
 /home/ym/.config/quickshell/ii/modules/ii/bar/weather/WeatherPopup.qml
 /home/ym/.config/quickshell/ii/modules/ii/bar/Workspaces.qml
+/home/ym/.config/quickshell/ii/modules/ii/cheatsheet/CheatsheetKeybindsCategory.qml
 /home/ym/.config/quickshell/ii/modules/ii/cheatsheet/CheatsheetKeybinds.qml
 /home/ym/.config/quickshell/ii/modules/ii/cheatsheet/CheatsheetPeriodicTable.qml
 /home/ym/.config/quickshell/ii/modules/ii/cheatsheet/Cheatsheet.qml

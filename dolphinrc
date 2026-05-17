@@ -12,7 +12,7 @@ ShowStatusBar=FullWidth
 Version=202
 
 [IconsMode]
-PreviewSize=144
+PreviewSize=96
 
 [KFileDialog Settings]
 Places Icons Auto-resize=false
