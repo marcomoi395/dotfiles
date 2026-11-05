@@ -4,54 +4,13 @@
   "cornerRadius": 12,
   "niriLayoutRadiusOverride": 12,
   "niriLayoutBorderSize": 0,
+  "audioShowStreamDevices": true,
   "springBounce": 0,
   "animationVariant": 1,
   "motionEffect": 1,
   "blurWallpaperOnOverview": true,
   "systemTrayIconTintMode": "monochrome",
   "controlCenterShowMicPercent": true,
-  "controlCenterWidgets": [
-    {
-      "id": "volumeSlider",
-      "enabled": true,
-      "width": 50
-    },
-    {
-      "id": "brightnessSlider",
-      "enabled": true,
-      "width": 50
-    },
-    {
-      "id": "wifi",
-      "enabled": true,
-      "width": 50
-    },
-    {
-      "id": "bluetooth",
-      "enabled": true,
-      "width": 50
-    },
-    {
-      "id": "audioOutput",
-      "enabled": true,
-      "width": 50
-    },
-    {
-      "id": "audioInput",
-      "enabled": true,
-      "width": 50
-    },
-    {
-      "id": "builtin_tailscale",
-      "enabled": true,
-      "width": 50
-    },
-    {
-      "id": "builtin_vpn",
-      "enabled": true,
-      "width": 50
-    }
-  ],
   "workspaceDragReorder": false,
   "appIdSubstitutions": [],
   "sortAppsAlphabetically": true,
@@ -110,6 +69,10 @@
         {
           "id": "focusedWindow",
           "enabled": false
+        },
+        {
+          "id": "bongoCat",
+          "enabled": true
         }
       ],
       "centerWidgets": [

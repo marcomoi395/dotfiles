@@ -1,0 +1,10 @@
+{
+  "lockfileVersion": 1,
+  "plugins": {
+    "bongoCat": {
+      "repo": "https://github.com/hthienloc/dms-plugins",
+      "path": "bongoCat",
+      "commit": "04d20e9b7e7662893c68be05473a6e40aa6dd284"
+    }
+  }
+}

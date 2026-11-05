@@ -1,6 +1,6 @@
 # Ubuntu + Niri + DankMaterialShell backup
 
-Captured: 2026-10-02
+Captured: 2026-11-05
 Source system: Ubuntu 26.04.1 LTS, x86_64, Niri on Wayland.
 
 This bundle captures the current configured state. A separate snapshot immediately after DankMaterialShell's default setup was not saved, so this bundle cannot reproduce that historical baseline by itself. On a fresh system, complete DMS's normal first-run/default setup, then restore these files.
@@ -8,14 +8,14 @@ This bundle captures the current configured state. A separate snapshot immediate
 ## Included
 
 - `home/.config/niri/`: Niri config and DMS-managed KDL fragments.
-- `home/.config/DankMaterialShell/settings.json`: DMS user settings.
-- `home/.config/nvim/`, `home/.config/kitty/`, `home/.config/fish/`: Neovim, Kitty, Fish configs. Fish plugin list and commented Hyprland autostart file included; Fish universal variables and machine-specific VPN alias excluded.
-- `home/workspaces/scripts/`: four original scripts plus the optional software installer; executable modes preserved.
+- `home/.config/DankMaterialShell/`: DMS settings, Firefox CSS, plugin lockfile, and BongoCat plugin.
+- `home/.config/nvim/`, `home/.config/kitty/`, `home/.config/fish/`: Neovim, Kitty, Fish configs. Fish plugin list and commented Hyprland autostart file included; machine-specific VPN alias and Fish universal variables excluded.
+- `home/workspaces/scripts/`: original scripts, optional software installer, and `check-bluetooth-volume.sh`; executable modes preserved.
 - `home/Pictures/thumb-1920-1301855.jpg`: wallpaper reported by `dms ipc call wallpaper get`.
 - `home/.local/share/fonts/JetBrainsMonoNerdFont/`: installed user font files.
 - `etc/apt/sources.list.d/avengemedia-ubuntu-danklinux-resolute.sources`: package source for Niri/DMS packages.
 
-No DMS plugin files, GTK/Qt/Matugen defaults, or DankSearch/Fcitx5 defaults are included.
+No other DMS plugins, GTK/Qt/Matugen defaults, or DankSearch/Fcitx5 defaults are included. Transient DMS state files are excluded.
 
 ## Restore
 
@@ -34,13 +34,19 @@ Complete DMS's normal first-run/default setup. Then restore the user files:
 ```sh
 cp -a home/.config/niri home/.config/nvim home/.config/kitty home/.config/fish "$HOME/.config/"
 cp -a home/.config/DankMaterialShell/settings.json "$HOME/.config/DankMaterialShell/settings.json"
+cp -a home/.config/DankMaterialShell/firefox.css home/.config/DankMaterialShell/plugins.lock.json "$HOME/.config/DankMaterialShell/"
+mkdir -p "$HOME/.config/DankMaterialShell/plugins"
+cp -a home/.config/DankMaterialShell/plugins/bongoCat "$HOME/.config/DankMaterialShell/plugins/"
 mkdir -p "$HOME/workspaces" "$HOME/Pictures" "$HOME/.local/share/fonts"
 cp -a home/workspaces/scripts "$HOME/workspaces/"
 cp -a home/Pictures/thumb-1920-1301855.jpg "$HOME/Pictures/"
 cp -a home/.local/share/fonts/JetBrainsMonoNerdFont "$HOME/.local/share/fonts/"
 systemctl --user enable --now dms.service
 fc-cache -f
+bash "$HOME/workspaces/scripts/check-bluetooth-volume.sh"
 ```
+
+`check-bluetooth-volume.sh` checks Niri's volume key bindings and PipeWire's default sink. It repairs incorrect volume bindings, saves a backup, and reloads Niri.
 
 The restored Neovim config requires its bundled dependency setup. Run it after copying the config and scripts:
 
